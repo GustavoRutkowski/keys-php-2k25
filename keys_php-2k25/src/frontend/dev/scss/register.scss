@@ -1,0 +1,13 @@
+@use "setup/all" as *;
+@use "components/form-box";
+@use "components/header";
+@use "components/scrollbar";
+
+main { overflow-y: scroll }
+
+p.sign-up-box__message {
+    text-align: center;
+
+    &.sucess { color: $confirm-color }
+    &.error { color: $cancel-color }
+}

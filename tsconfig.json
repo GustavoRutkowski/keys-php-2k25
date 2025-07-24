@@ -10,7 +10,7 @@
         "resolveJsonModule": true,
         // "isolatedModules": true,
         "allowSyntheticDefaultImports": true,
-        "sourceMap": true,
+        // "sourceMap": true,
         "outDir": "./src/frontend/public/js",
         "baseUrl": "./src/frontend",
         "paths": { "@frontend/*": ["*"] }

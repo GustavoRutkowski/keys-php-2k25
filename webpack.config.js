@@ -19,7 +19,7 @@ const tsConfig = {
 
     output: {
         path: path.resolve(__dirname, `${outputRoot}/js`),
-        filename: '[name].min.js'
+        filename: '[name].js'
     },
 
     module: {
@@ -37,18 +37,18 @@ const tsConfig = {
     },
 
     optimization: {
-        minimize: true,
+        minimize: false,
         minimizer: [
             new TerserPlugin({
                 terserOptions: {
                     format: { comments: false }
                 },
-                extractComments: false
+                extractComments: true
             })
         ]
     },
 
-    devtool: 'source-map',
+    // devtool: 'source-map',
 
     plugins: [new CleanWebpackPlugin()]
 };
